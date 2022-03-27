@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color:#f8ebe9 ;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+}
+.container{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top:50px;
+    width: 1000px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow:0 20px 20px 0px rgba(0, 0,0, .3);
+}
+.container__left{
+    background-image:url(./images/background.jpg);
+    width: 30%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding: 20px;
+}
+.container__left__inner{
+   text-decoration: none;
+}
+.arrow__left{
+    font-size: 18px;
+    color: #627a99;
+}
+.back{
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left:8px;
+    color: #627a99;
+    
+}
+.container__left__inner:hover .back,
+.container__left__inner:hover .arrow__left{
+    color: #000;;
+}
+.container__right{
+    width: 60%;
+    padding: 20px;
+}
+.lists{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+.list__item{
+    margin-right: 30px;
+}
+.list__link{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ababab;
+
+}
+.list__link:hover{
+    color: #000;
+}
+.active{
+    font-weight: 600;
+    color: #000;
+}
+.title{
+    font-size: 55px;
+    margin-top: 40px;
+}
+.title .line{
+    width:90px;
+    background-color: #000;
+    height: 4px;
+    display: inline-block;
+    vertical-align:middle;
+
+}
+.text{
+    font-size:18px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.info{
+    display: flex;
+    margin-top:30px;
+}
+.info__video{
+    position: relative;
+}
+.info__video img.house{
+    width: 100%;
+}
+.circle{
+    position: absolute;
+    left:95px;
+    top:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.6);
+}
+.circle:hover{
+    cursor: pointer;
+}
+.info__more{
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+    font-weight: 500;
+    color: #394c47;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.info__more .fas{
+    margin-left: 5px;
+}
+.info__text{
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+    margin-left: 30px;
+    line-height: 1.6;
+}
+
